@@ -291,9 +291,8 @@ header {
         font-size: .6rem;
     }
     .imagenSobreMi {
-        border: solid;
         width: 90%;
         height: 50%;
-        border-radius: 361px 0px 58px 27px;
+        border-radius: 121px 0px 58px 27px;
     }
 }
