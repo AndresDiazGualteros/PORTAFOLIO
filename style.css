@@ -148,7 +148,7 @@ header {
 /* sobre mi */
 .sobreMi{
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     background-color: var(--Background);
 }
 .encabezado1{
@@ -190,6 +190,24 @@ header {
     border: solid;
     width: 50%;
     height: 40%;
+}
+.parrafoSobreMi p {
+    border: solid;
+    height: 80%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.contenedorButtonCV {
+    border: solid;
+    margin: auto;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorButtonCV button {
+    cursor: pointer;
 }
 .imagenSobreMi {
     border: solid;
@@ -282,6 +300,7 @@ header {
 
     /* sobre mi */
     .contenidoSobreMi{
+        width: 80%;
         flex-direction: column-reverse;
     }
     .parrafoSobreMi {
@@ -289,6 +308,18 @@ header {
         width: 90%;
         height: 50%;
         font-size: .6rem;
+    }
+    .parrafoSobreMi p {
+        border: solid;
+        height: 80%;
+        padding: .5rem;
+        font-size: .65rem;
+        text-align: center;
+    }
+    .contenedorButtonCV {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .imagenSobreMi {
         width: 90%;
