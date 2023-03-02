@@ -109,6 +109,7 @@ header {
     font-weight: 600;
 }
 .redeSociales {
+
     width: 100%;
     height: 5rem;
     bottom: 0;
@@ -168,6 +169,7 @@ header {
     /* titulo pricipal */
     header {
         padding-top: 16rem;
+        background-position: -500px 0px;
     }
     .texto{
         flex-direction: column;
@@ -182,6 +184,7 @@ header {
     .developer {
         font-size: 2rem;
         width: 100%;
+        text-shadow: 10px 10px 10px rgb(50, 50, 50);
     }
 
     .redeSociales {
@@ -189,6 +192,6 @@ header {
         height: 5rem;
         bottom: 0;
         left: 0;
-        margin-top: 8.5rem;
+        margin-top: 12rem;
     }
 }
