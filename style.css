@@ -10,6 +10,7 @@
 :root{
     --Background:#55423d;
     --backgroud-two:#271c19;
+    --contend:#ffc0ad;
     
     --headline:#fffffe;
     --paragraph:#fff3ec;
@@ -20,12 +21,13 @@
 /* nav */
 .navbar {
     position: absolute;
-    padding: 1.5rem;
+    padding: .1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     position: fixed;
+    z-index: 1000;
 }
 .navbar a {
     color: var(--headline);
@@ -47,6 +49,7 @@
 .navbar .nav-links ul li a {
     font-weight: 600;
     transition: all .05s;
+    
 }
 .navbar .nav-links ul li a:hover{
     border-bottom: solid var(--headline);
@@ -76,37 +79,42 @@ header {
     height: 100vh;
     width: 100vw;
     background-image: url(./Imagenes/imagenFondo.jpg) ;
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 17rem;
 }
 .texto{
     color: var(--headline);
-    padding: 1rem;
+    padding: .5rem;
     width: 55%;
+    height: 10rem;
     border-bottom: solid;
     display: flex;
     justify-content: center;
     margin: auto;
 }
 .titulo_principal {
-    width: 58%;
-    height: 10rem;
+    width: 55%;
+    height: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 5rem;
     color: var(--headline);
+    font-weight: 400;
 }
 
 .developer {
     width: 42%;
+    height: 100%;
     font-size: 5rem;
     color: var(--backgroud-two);
     text-shadow: 10px 10px 15px rgb(45, 45, 45);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 .redeSociales {
 
@@ -120,15 +128,84 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
     height: 100%;
 }
 .contenedorRedes li {
+    padding: .1rem .5rem;
     font-size: 1.8rem;
+    transition: all .2s ease ;
+}
+.contenedorRedes li:hover {
+    transform: scale(1.2);
 }
 .contenedorRedes li a {
     color: var(--headline);
+}
+
+
+/* sobre mi */
+.sobreMi{
+    width: 100vw;
+    height: 110vh;
+    background-color: var(--Background);
+}
+.encabezado1{
+    width: 100vw;
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--Background);
+
+}
+.subtituloSobreMI {
+    width: 100vw;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--headline);
+}
+.contenedorSobreMi {
+    border: solid;
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenidoSobreMi{
+    border: solid;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--contend);
+    padding: 1rem;
+}
+.parrafoSobreMi {
+    border: solid;
+    width: 50%;
+    height: 40%;
+}
+.imagenSobreMi {
+    border: solid;
+    width: 40%;
+    height: 90%;
+    background-color: var(--headline);
+    border-radius: 200px 0px 142px 35px;
+    -moz-border-radius: 200px 0px 142px 35px;
+    -webkit-border-radius: 200px 0px 142px 35px;
+    border: 0px solid #000000;
+}
+/* portafolio */
+.portafolio{
+    border: solid;
+    width: 100vw;
+    height: 100rem;
 }
 @media screen and (max-width: 900px) {
     .navbar {
@@ -169,21 +246,29 @@ header {
     /* titulo pricipal */
     header {
         padding-top: 16rem;
-        background-position: -500px 0px;
+        background-position: -560px 0px;
+        padding-top: 21rem;
     }
     .texto{
+        padding: .8rem;
+        border-bottom: solid;
         flex-direction: column;
         align-items: center;
+        width: 19rem;
+        height: 8rem;
     }
     .titulo_principal {
-        font-size: 2rem;
+        /* border: solid; */
+        font-size: 2.5rem;
         width: 100%;
-        height: 6rem;
+        height: 50%;
         text-align: center;
     }
     .developer {
-        font-size: 2rem;
+        /* border: solid; */
+        font-size: 2.5rem;
         width: 100%;
+        height: 50%;
         text-shadow: 10px 10px 10px rgb(50, 50, 50);
     }
 
@@ -193,5 +278,22 @@ header {
         bottom: 0;
         left: 0;
         margin-top: 12rem;
+    }
+
+    /* sobre mi */
+    .contenidoSobreMi{
+        flex-direction: column-reverse;
+    }
+    .parrafoSobreMi {
+        border: solid;
+        width: 90%;
+        height: 50%;
+        font-size: .6rem;
+    }
+    .imagenSobreMi {
+        border: solid;
+        width: 90%;
+        height: 50%;
+        border-radius: 361px 0px 58px 27px;
     }
 }
