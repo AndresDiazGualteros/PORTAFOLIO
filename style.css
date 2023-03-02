@@ -79,6 +79,7 @@ header {
         justify-content: center;
         align-items: center;
         margin-left: -100%;
+        transition: all .5s ease;
     }
     .nav-links.mobile-menu {
         margin-left: 0;
@@ -86,7 +87,7 @@ header {
     .navbar .logo {
         padding: 1.5rem;
         position: absolute;
-        top: .2rem;
+        top: .05rem;
         left: .1rem;
     }
     .navbar .nav-links ul {
