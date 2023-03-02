@@ -80,7 +80,7 @@ header {
         align-items: center;
         margin-left: -100%;
     }
-    .nav-links .mobile-menu {
+    .nav-links.mobile-menu {
         margin-left: 0;
     }
     .navbar .logo {
